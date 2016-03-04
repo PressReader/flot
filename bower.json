@@ -1,10 +1,20 @@
 {
-   "name": "Flot",
-   "version": "0.8.3",
-   "main": "jquery.flot.js",
-   "dependencies": {
-     "jquery": ">= 1.2.6"
-   }
+  "name": "Flot",
+  "description": "Flot charts for jQuery",
+  "main": "jquery.flot.js",
+  "authors": [
+    "IOLA and Ole Laursen"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "flot",
+    "jquery"
+  ],
+  "homepage": "https://github.com/PressReader/flot",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
   "ignore": [
     "**/.*",
     "*.md",
@@ -13,8 +23,6 @@
     "bower_components",
     "test",
     "tests",
-    "Makefile",
-    "!README.md"
+    "Makefile"
   ]
-
 }

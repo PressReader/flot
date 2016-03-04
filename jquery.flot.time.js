@@ -8,7 +8,8 @@ API.txt for details.
 
 */
 
-(function($) {
+
+var def = function($) {
 
 	var options = {
 		xaxis: {
@@ -429,4 +430,13 @@ API.txt for details.
 	$.plot.formatDate = formatDate;
 	$.plot.dateGenerator = dateGenerator;
 
-})(jQuery);
+};
+
+// Register as a named AMD module, since jQuery can be concatenated with other
+if (typeof define === "function" && define.amd) {
+    define("jquery.flot.time", ['jquery', 'jquery.flot'], def);
+} else {
+    def(jQuery);
+}
+
+
